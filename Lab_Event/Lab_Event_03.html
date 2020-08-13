@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab</title>
+<script type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css"></style>
+</head>
+<body>
+	<img src="images/clickme.png" onclick="doAnimateShow();">
+
+	<div class="box" id="box">
+		<a class="boxclose" id="boxclose"></a>
+		<h1>Important message</h1>
+		<p>Here comes a very important message for your user. Turn this
+			window off by clicking the cross.</p>
+	</div>
+
+	<script>
+	//點click時會發現box出現
+
+	function doAnimateShow() {
+		$("#box").css("top","200px");
+		//document.getElementById("box").style.top = "200px";
+	}
+		
+	</script>
+
+</body>
+</html>
